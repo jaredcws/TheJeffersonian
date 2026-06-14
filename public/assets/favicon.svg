@@ -1,10 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="The Jeffersonian">
   <rect width="64" height="64" rx="12" fill="#1f2a30"/>
-  <g fill="none" stroke="#d9a441" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M14 50 V26 L32 12 L50 26 V50" />
+  <g fill="none" stroke="#d9a441" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <!-- body with flat roof -->
+    <path d="M15 50 V23 H49 V50" />
+    <!-- overhanging cornice -->
+    <path d="M12 23 H52" />
+    <!-- central raised nameplate / parapet -->
+    <path d="M27 23 V15 H37 V23" />
+    <!-- floor divider -->
+    <path d="M15 36 H49" />
+    <!-- ground line -->
     <path d="M10 50 H54" />
-    <path d="M26 50 V36 H38 V50" />
-    <line x1="32" y1="12" x2="32" y2="6" />
+    <!-- tall windows -->
+    <path d="M21 28 V46 M26 28 V46 M38 28 V46 M43 28 V46" />
   </g>
-  <circle cx="32" cy="5" r="2.4" fill="#d9a441" />
+  <!-- central entrance -->
+  <path d="M29 50 V40 H35 V50 Z" fill="#d9a441"/>
 </svg>

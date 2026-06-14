@@ -1,20 +1,30 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 64" role="img" aria-label="The Jeffersonian">
   <defs>
     <style>
-      .mark { fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+      .mark { fill: none; stroke: currentColor; stroke-width: 2.1; stroke-linecap: round; stroke-linejoin: round; }
+      .markf { fill: currentColor; stroke: none; }
       .word { font-family: 'Fraunces', Georgia, 'Times New Roman', serif; fill: currentColor; }
       .wmain { font-size: 25px; font-weight: 600; letter-spacing: 0.3px; }
       .wsub { font-family: 'Inter', system-ui, sans-serif; font-size: 8.4px; letter-spacing: 3.2px; fill: currentColor; opacity: 0.72; }
     </style>
   </defs>
-  <!-- Building monogram mark -->
+  <!-- Monogram: the flat-roofed Classical Revival building -->
   <g class="mark">
-    <path d="M10 50 V24 L26 12 L42 24 V50" />
+    <!-- body with flat roof -->
+    <path d="M11 50 V22 H41 V50" />
+    <!-- overhanging cornice -->
+    <path d="M8 22 H44" />
+    <!-- central raised nameplate / parapet -->
+    <path d="M22 22 V15 H30 V22" />
+    <!-- floor divider -->
+    <path d="M11 35 H41" />
+    <!-- ground line -->
     <path d="M6 50 H46" />
-    <path d="M21 50 V36 H31 V50" />
-    <line x1="26" y1="12" x2="26" y2="6" />
-    <circle cx="26" cy="4" r="1.6" fill="currentColor" stroke="none" />
+    <!-- tall windows (two per side, across both floors) -->
+    <path d="M16 27 V47 M20 27 V47 M32 27 V47 M36 27 V47" />
   </g>
+  <!-- central entrance -->
+  <path class="markf" d="M24 50 V41 H28 V50 Z" />
   <text x="58" y="33" class="word wmain">The Jeffersonian</text>
   <text x="59" y="47" class="wsub">JEFFERSON · IOWA</text>
 </svg>
