@@ -11,8 +11,6 @@
     <path d="M15 36 H49" />
     <!-- ground line -->
     <path d="M10 50 H54" />
-    <!-- tall windows -->
-    <path d="M21 28 V46 M26 28 V46 M38 28 V46 M43 28 V46" />
   </g>
   <!-- central entrance -->
   <path d="M29 50 V40 H35 V50 Z" fill="#d9a441"/>

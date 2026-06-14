@@ -20,8 +20,6 @@
     <path d="M11 35 H41" />
     <!-- ground line -->
     <path d="M6 50 H46" />
-    <!-- tall windows (two per side, across both floors) -->
-    <path d="M16 27 V47 M20 27 V47 M32 27 V47 M36 27 V47" />
   </g>
   <!-- central entrance -->
   <path class="markf" d="M24 50 V41 H28 V50 Z" />
