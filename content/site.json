@@ -1,0 +1,33 @@
+{
+  "name": "The Jeffersonian",
+  "shortName": "The Jeffersonian",
+  "tagline": "Historic living, reimagined in the heart of Jefferson, Iowa.",
+  "metaDescription": "The Jeffersonian transforms Jefferson, Iowa's historic 1921 high school into 25 distinctive apartments — efficiency to three-bedroom — blending preserved character with modern comfort.",
+  "hero": {
+    "eyebrow": "Now leasing · Jefferson, Iowa",
+    "heading": "A landmark, restored as home.",
+    "subheading": "Twenty-five one-of-a-kind apartments inside Jefferson's beloved 1921 schoolhouse — where original character meets thoughtfully modern living.",
+    "primaryCta": { "label": "Explore the apartments", "href": "apartments.html" },
+    "secondaryCta": { "label": "Request information", "href": "#contact" }
+  },
+  "stats": [
+    { "value": "25", "label": "Distinctive apartments" },
+    { "value": "1921", "label": "Year the landmark was built" },
+    { "value": "580–1,590", "label": "Square feet, efficiency to 3-bed" },
+    { "value": "4", "label": "Stories, served by elevator" }
+  ],
+  "contact": {
+    "email": "203WHarrison@gmail.com",
+    "phone": "",
+    "address": "203 W Harrison Street",
+    "city": "Jefferson",
+    "state": "IA",
+    "zip": "50129",
+    "mapQuery": "203 W Harrison Street, Jefferson, IA 50129"
+  },
+  "social": {
+    "facebook": "",
+    "instagram": ""
+  },
+  "footerNote": "The Jeffersonian is an adaptive-reuse restoration of the former Jefferson High School, listed for its historic significance and renewed for the next century of community life."
+}

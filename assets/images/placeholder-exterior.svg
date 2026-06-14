@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Exterior (placeholder)">
+  <rect width="400" height="300" fill="#f3e7d2"/>
+  <g fill="none" stroke="#9c3f2c" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.85">
+    <path d="M120 250 V150 L200 100 L280 150 V250" /><path d="M104 250 H296" /><path d="M180 250 V200 H220 V250" />
+  </g>
+  <text x="200" y="285" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="13" letter-spacing="2" fill="#9c3f2c" opacity="0.75">EXTERIOR</text>
+</svg>

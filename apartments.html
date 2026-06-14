@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apartments &amp; Floor Plans — The Jeffersonian</title>
+  <meta name="description" content="Explore the 25 apartments at The Jeffersonian — 14 distinct floor plans from efficiency studios to three-bedroom homes, inside a restored 1921 landmark in Jefferson, Iowa.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Apartments & Floor Plans — The Jeffersonian">
+  <meta property="og:description" content="14 distinct floor plans from efficiency studios to three-bedroom homes inside a restored 1921 landmark.">
+  <meta property="og:image" content="assets/building.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body data-page="apartments">
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="index.html" aria-label="The Jeffersonian — home">
+        <img src="assets/logo.svg" alt="The Jeffersonian" width="220" height="64">
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html#about">The Building</a></li>
+        <li><a href="index.html#living">Living Here</a></li>
+        <li><a href="apartments.html">Apartments</a></li>
+        <li><a href="index.html#gallery">Gallery</a></li>
+        <li><a href="index.html#news">News</a></li>
+        <li class="nav-cta"><a class="btn btn--primary" href="index.html#contact">Request Info</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Page hero -->
+    <section class="page-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="index.html">Home</a> &nbsp;/&nbsp; Apartments</p>
+        <h1>Apartments &amp; Floor Plans</h1>
+        <p data-apartments="intro">The Jeffersonian offers 14 distinct floor-plan configurations across four levels — no two quite alike.</p>
+      </div>
+    </section>
+
+    <!-- Unit types -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Floor Plans</span>
+          <h2 class="section-title">Choose the home that fits you</h2>
+          <p class="lead" data-apartments="note"></p>
+        </div>
+        <div class="unit-grid" data-apartments="grid"></div>
+      </div>
+    </section>
+
+    <!-- Floors -->
+    <section class="section section--parchment">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow">By the Floor</span>
+          <h2 class="section-title">Twenty-five homes, four levels</h2>
+          <p class="lead">Each floor carries its own character, from the gym-level homes to the lofted apartments above.</p>
+        </div>
+        <div class="floor-strip" data-apartments="floors"></div>
+      </div>
+    </section>
+
+    <!-- Amenities recap -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow">Every Home Includes</span>
+          <h2 class="section-title" data-amenities="title">Living at The Jeffersonian</h2>
+          <p class="lead" data-amenities="intro"></p>
+        </div>
+        <div class="amenity-grid" data-amenities="grid"></div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section section--ink">
+      <div class="container" style="text-align:center; max-width:680px;">
+        <span class="eyebrow">Ready When You Are</span>
+        <h2 class="section-title">Ask about availability</h2>
+        <p class="lead" style="color:#c9cfd2">Floor plans and availability change as leasing progresses. Reach out and we'll share current options, pricing, and next steps for the home you have in mind.</p>
+        <p style="margin-top:1.6rem;">
+          <a class="btn btn--light" href="index.html#contact">Request information <span class="arrow">→</span></a>
+          <a class="btn btn--ghost" style="border-color:rgba(247,241,230,0.3); color:var(--cream); margin-left:.5rem;" data-contact="email" href="mailto:203WHarrison@gmail.com">Email us</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html" aria-label="The Jeffersonian"><img src="assets/logo.svg" alt="The Jeffersonian" width="220" height="64" style="filter:brightness(0) invert(1)"></a>
+          <p class="footer-about" data-site="footerNote">The Jeffersonian is an adaptive-reuse restoration of the former Jefferson High School, renewed for the next century of community life.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html#about">The Building</a></li>
+            <li><a href="index.html#living">Living Here</a></li>
+            <li><a href="apartments.html">Apartments</a></li>
+            <li><a href="index.html#gallery">Gallery</a></li>
+            <li><a href="index.html#news">News</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a data-contact="email" href="mailto:203WHarrison@gmail.com">203WHarrison@gmail.com</a></li>
+            <li data-contact="address" style="white-space:pre-line">203 W Harrison Street, Jefferson, IA 50129</li>
+            <li><a data-social="facebook" href="#">Facebook</a></li>
+            <li><a data-social="instagram" href="#">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> The Jeffersonian · Jefferson, Iowa</span>
+        <span>Developed by Chris Deal · Built by Woodruff Construction</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>

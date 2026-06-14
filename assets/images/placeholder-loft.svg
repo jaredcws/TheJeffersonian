@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Lofted apartment (placeholder)">
+  <rect width="400" height="300" fill="#f4ecd9"/>
+  <g fill="none" stroke="#8a6a2f" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.85">
+    <path d="M110 250 V160 L200 110 L290 160 V250" /><line x1="110" y1="200" x2="290" y2="200"/><rect x="150" y="210" width="40" height="40"/><rect x="210" y="210" width="40" height="40"/>
+  </g>
+  <text x="200" y="285" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="13" letter-spacing="2" fill="#8a6a2f" opacity="0.75">LOFTED APARTMENT</text>
+</svg>

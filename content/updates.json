@@ -1,0 +1,24 @@
+{
+  "sectionTitle": "Latest news",
+  "intro": "Updates from the restoration. Add a new post anytime from the admin panel.",
+  "posts": [
+    {
+      "date": "2026-04-03",
+      "title": "Open house welcomes the community",
+      "summary": "Neighbors stepped inside to see the transformation firsthand as the restoration nears completion.",
+      "body": "The public was invited to tour The Jeffersonian and experience how the historic schoolhouse is being reborn as 25 distinctive homes. Restored windows, preserved lockers, and lofted layouts drew enthusiastic reactions from visitors."
+    },
+    {
+      "date": "2026-02-01",
+      "title": "Project earns a Housing Impact Award",
+      "summary": "Developer Chris Deal was recognized by the Ames Regional Economic Alliance for the restoration's impact on the community.",
+      "body": "The 2025 Housing Impact Award celebrates developments that strengthen their communities. The Jeffersonian was honored for breathing new life into a beloved landmark while adding much-needed housing to Jefferson."
+    },
+    {
+      "date": "2025-08-01",
+      "title": "Self-guided tours begin",
+      "summary": "As progress accelerated, the community was invited to walk through and witness the work underway.",
+      "body": "Self-guided tours offered an early look at the apartments taking shape inside the former schoolhouse, with original architectural details preserved throughout."
+    }
+  ]
+}

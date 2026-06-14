@@ -1,0 +1,52 @@
+{
+  "intro": "The Jeffersonian offers 14 distinct floor-plan configurations across four levels — no two quite alike. Many homes feature lofted ceilings and preserved architectural details drawn from the building's original character. The summaries below are representative; contact us for current availability, pricing, and the plan that fits you best.",
+  "note": "Square footage and layouts vary by unit. At least five apartments are reserved as income-qualified homes. Availability is updated regularly — reach out to confirm.",
+  "unitTypes": [
+    {
+      "id": "A1",
+      "name": "Efficiency",
+      "beds": "Studio",
+      "baths": "1",
+      "sqft": "580",
+      "blurb": "An efficient, light-filled studio — ideal for those who want a low-maintenance home with classic schoolhouse windows.",
+      "features": ["Restored oversized windows", "Open-plan living", "Energy-efficient appliances"],
+      "availability": "Contact for availability"
+    },
+    {
+      "id": "B-series",
+      "name": "One Bedroom",
+      "beds": "1",
+      "baths": "1",
+      "sqft": "720–950",
+      "blurb": "Comfortable one-bedroom homes with generous living space and original architectural touches in many units.",
+      "features": ["Separate bedroom", "Preserved woodwork in select units", "In-building laundry access"],
+      "availability": "Contact for availability"
+    },
+    {
+      "id": "C-series",
+      "name": "Two Bedroom",
+      "beds": "2",
+      "baths": "1–2",
+      "sqft": "1,050–1,300",
+      "blurb": "Spacious two-bedroom layouts — many with lofted ceilings — perfect for professionals, couples, and downsizing retirees.",
+      "features": ["Lofted layouts in select units", "Ample storage", "Abundant natural light"],
+      "availability": "Contact for availability"
+    },
+    {
+      "id": "D1",
+      "name": "Three Bedroom",
+      "beds": "3",
+      "baths": "2",
+      "sqft": "Up to 1,590",
+      "blurb": "The largest homes in the building, offering room to spread out while keeping the soul of the historic schoolhouse.",
+      "features": ["Largest floor plans", "Multiple bedrooms", "Historic character details"],
+      "availability": "Contact for availability"
+    }
+  ],
+  "floors": [
+    { "level": "Gym Level", "summary": "5 apartments, including the building's largest three-bedroom homes." },
+    { "level": "First Floor", "summary": "10 apartments across a mix of layouts." },
+    { "level": "Second Floor", "summary": "10 apartments, many with preserved windows and woodwork." },
+    { "level": "Third Floor", "summary": "10 apartments, several featuring lofted ceilings." }
+  ]
+}

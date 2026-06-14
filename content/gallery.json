@@ -1,0 +1,12 @@
+{
+  "sectionTitle": "A look inside",
+  "intro": "Photographs from the restoration. Replace these with your own images at any time from the admin panel.",
+  "images": [
+    { "src": "assets/images/placeholder-exterior.svg", "caption": "The historic façade, restored", "category": "Exterior" },
+    { "src": "assets/images/placeholder-hallway.svg", "caption": "Original hallway lockers preserved", "category": "Interior" },
+    { "src": "assets/images/placeholder-loft.svg", "caption": "A lofted apartment layout", "category": "Apartments" },
+    { "src": "assets/images/placeholder-window.svg", "caption": "Restored oversized windows", "category": "Interior" },
+    { "src": "assets/images/placeholder-kitchen.svg", "caption": "Modern kitchens with historic woodwork", "category": "Apartments" },
+    { "src": "assets/images/placeholder-stairwell.svg", "caption": "The grand stairwell", "category": "Interior" }
+  ]
+}

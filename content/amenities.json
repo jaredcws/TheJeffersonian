@@ -1,0 +1,14 @@
+{
+  "sectionTitle": "Living at The Jeffersonian",
+  "intro": "Modern comfort, set within a building you simply cannot find anywhere else.",
+  "items": [
+    { "icon": "elevator", "title": "Elevator access", "body": "All four levels are served by an elevator for easy, accessible living." },
+    { "icon": "window", "title": "Restored windows", "body": "Large historic windows reinstated throughout fill homes with natural light." },
+    { "icon": "wood", "title": "Original woodwork", "body": "Wood cupboards, doorframes, and shelving preserved and woven into many homes." },
+    { "icon": "locker", "title": "Heritage details", "body": "Original hallway lockers remain in place as a nod to the building's storied past." },
+    { "icon": "loft", "title": "Lofted layouts", "body": "Many apartments feature unique lofted ceilings created by the building's design." },
+    { "icon": "parking", "title": "Off-street parking", "body": "Dedicated parking is planned so residents won't have to park on the street." },
+    { "icon": "leaf", "title": "Energy efficient", "body": "A full restoration brings modern systems and efficient appliances to every home." },
+    { "icon": "location", "title": "Walkable downtown", "body": "Steps from downtown Jefferson, the Mahanay Bell Tower, shops, and the square." }
+  ]
+}

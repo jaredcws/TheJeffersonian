@@ -1,0 +1,12 @@
+{
+  "sectionTitle": "The journey of a restoration",
+  "intro": "From a closed schoolhouse to a thriving community of homes — a few milestones along the way.",
+  "milestones": [
+    { "date": "1921", "title": "A landmark is built", "body": "The schoolhouse opens, designed by Proudfoot, Bird & Rawson, and becomes a fixture of Jefferson life." },
+    { "date": "2020", "title": "The doors close", "body": "After a century of students, the building closes — and its next chapter begins to take shape." },
+    { "date": "2025", "title": "Restoration recognized", "body": "Developer Chris Deal earns a Housing Impact Award from the Ames Regional Economic Alliance for the project." },
+    { "date": "Aug 2025", "title": "Tours begin", "body": "Self-guided tours open to the community as progress accelerates inside the building." },
+    { "date": "Apr 2026", "title": "Open house", "body": "The public is welcomed in to see the transformation firsthand." },
+    { "date": "Fall 2026", "title": "Welcome home", "body": "The Jeffersonian opens its doors to its first residents." }
+  ]
+}

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Jeffersonian — Historic Apartments in Jefferson, Iowa</title>
+  <meta name="description" content="The Jeffersonian transforms Jefferson, Iowa's historic 1921 high school into 25 distinctive apartments — efficiency to three-bedroom — blending preserved character with modern comfort.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <!-- Open Graph / social sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="The Jeffersonian — Historic Apartments in Jefferson, Iowa">
+  <meta property="og:description" content="25 distinctive apartments inside Jefferson, Iowa's beloved 1921 schoolhouse. Now leasing.">
+  <meta property="og:image" content="assets/building.svg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body data-page="home">
+
+  <!-- ===================== Header ===================== -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="index.html" aria-label="The Jeffersonian — home">
+        <img src="assets/logo.svg" alt="The Jeffersonian" width="220" height="64">
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">The Building</a></li>
+        <li><a href="#living">Living Here</a></li>
+        <li><a href="apartments.html">Apartments</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#news">News</a></li>
+        <li class="nav-cta"><a class="btn btn--primary" href="#contact">Request Info</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===================== Hero ===================== -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow" data-hero="eyebrow">Now leasing · Jefferson, Iowa</span>
+          <h1 data-hero="heading">A landmark, restored as home.</h1>
+          <p class="lead" data-hero="subheading">Twenty-five one-of-a-kind apartments inside Jefferson's beloved 1921 schoolhouse — where original character meets thoughtfully modern living.</p>
+          <div class="hero-actions">
+            <a class="btn btn--primary" data-hero="primaryCta" href="apartments.html">Explore the apartments <span class="arrow">→</span></a>
+            <a class="btn btn--ghost" data-hero="secondaryCta" href="#contact">Request information </a>
+          </div>
+        </div>
+        <div class="hero-art reveal">
+          <div class="frame"><img src="assets/building.svg" alt="Illustration of the historic Jeffersonian building" width="640" height="480"></div>
+          <div class="hero-badge"><strong>Est. 1921</strong>Designed by Proudfoot, Bird &amp; Rawson</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Stats ===================== -->
+    <section class="section section--tight">
+      <div class="container">
+        <div class="stats" id="stats">
+          <div class="stat reveal"><div class="num">25</div><div class="lbl">Distinctive apartments</div></div>
+          <div class="stat reveal"><div class="num">1921</div><div class="lbl">Year the landmark was built</div></div>
+          <div class="stat reveal"><div class="num">580–1,590</div><div class="lbl">Square feet, efficiency to 3-bed</div></div>
+          <div class="stat reveal"><div class="num">4</div><div class="lbl">Stories, served by elevator</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== About ===================== -->
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div>
+          <span class="eyebrow">The Building</span>
+          <h2 class="section-title" data-about="title">A century of gathering, made new</h2>
+          <p class="lead" data-about="lead">Built in 1921 and designed by the celebrated Iowa firm Proudfoot, Bird &amp; Rawson, this building educated generations of Jefferson students before its doors closed in 2020. Today it begins a new chapter — as a place to call home.</p>
+          <div class="about-body" data-about="body"></div>
+        </div>
+        <div class="highlights reveal" data-about="highlights"></div>
+      </div>
+    </section>
+
+    <!-- ===================== Living / amenities ===================== -->
+    <section class="section section--parchment" id="living">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow">Living Here</span>
+          <h2 class="section-title" data-amenities="title">Living at The Jeffersonian</h2>
+          <p class="lead" data-amenities="intro">Modern comfort, set within a building you simply cannot find anywhere else.</p>
+        </div>
+        <div class="amenity-grid" data-amenities="grid"></div>
+      </div>
+    </section>
+
+    <!-- ===================== Apartments preview ===================== -->
+    <section class="section" id="apartments">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow">The Apartments</span>
+          <h2 class="section-title">Homes as individual as the building</h2>
+          <p class="lead" data-apartments="intro"></p>
+        </div>
+        <div class="unit-grid" data-apartments="grid"></div>
+        <p style="text-align:center; margin-top:2.2rem;">
+          <a class="btn btn--primary" href="apartments.html">See all floor plans &amp; availability <span class="arrow">→</span></a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== Timeline ===================== -->
+    <section class="section section--ink" id="story">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">The Restoration</span>
+          <h2 class="section-title" data-timeline="title">The journey of a restoration</h2>
+          <p class="lead" data-timeline="intro" style="color:#c9cfd2"></p>
+        </div>
+        <div class="timeline" data-timeline="list"></div>
+      </div>
+    </section>
+
+    <!-- ===================== Gallery ===================== -->
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow">Gallery</span>
+          <h2 class="section-title" data-gallery="title">A look inside</h2>
+          <p class="lead" data-gallery="intro"></p>
+        </div>
+        <div class="gallery" data-gallery="grid"></div>
+      </div>
+    </section>
+
+    <!-- ===================== News / updates ===================== -->
+    <section class="section section--parchment" id="news">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow">News</span>
+          <h2 class="section-title" data-updates="title">Latest news</h2>
+          <p class="lead" data-updates="intro"></p>
+        </div>
+        <div class="updates-grid" data-updates="grid"></div>
+      </div>
+    </section>
+
+    <!-- ===================== FAQ ===================== -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow">Good to Know</span>
+          <h2 class="section-title" data-faq="title">Questions, answered</h2>
+        </div>
+        <div class="faq" data-faq="list"></div>
+      </div>
+    </section>
+
+    <!-- ===================== Contact ===================== -->
+    <section class="section section--ink" id="contact">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow">Get in Touch</span>
+          <h2 class="section-title">Find your place in history</h2>
+          <p class="lead" style="color:#c9cfd2">Join the interest list, ask a question, or request availability and pricing. We'd love to hear from you.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div class="contact-card">
+              <div class="k">Visit</div>
+              <div class="v" data-contact="address" style="white-space:pre-line">203 W Harrison Street
+Jefferson, IA 50129</div>
+            </div>
+            <div class="contact-card">
+              <div class="k">Email</div>
+              <div class="v"><a data-contact="email" href="mailto:203WHarrison@gmail.com">203WHarrison@gmail.com</a></div>
+            </div>
+            <div class="contact-card" data-contact-block>
+              <div class="k">Call</div>
+              <div class="v"><a data-contact="phone" href="tel:">—</a></div>
+            </div>
+            <iframe class="map-embed" data-map title="Map to The Jeffersonian" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=203%20W%20Harrison%20Street%2C%20Jefferson%2C%20IA%2050129&output=embed"></iframe>
+          </div>
+
+          <!-- Netlify Forms compatible. On non-Netlify hosts the script falls back to a mailto link. -->
+          <form class="form" id="inquiry-form" name="inquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="inquiry">
+            <p class="hp"><label>Don't fill this out: <input name="bot-field"></label></p>
+            <div class="row">
+              <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" required></div>
+              <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required></div>
+            </div>
+            <div class="row">
+              <div class="field"><label for="phone">Phone <span style="font-weight:400;color:#8a938d">(optional)</span></label><input id="phone" name="phone" type="tel"></div>
+              <div class="field"><label for="interest">Interested in</label>
+                <select id="interest" name="interest">
+                  <option>Any apartment</option>
+                  <option>Efficiency / studio</option>
+                  <option>One bedroom</option>
+                  <option>Two bedroom</option>
+                  <option>Three bedroom</option>
+                  <option>Income-qualified housing</option>
+                </select>
+              </div>
+            </div>
+            <div class="field"><label for="message">Message</label><textarea id="message" name="message" placeholder="Tell us a little about what you're looking for…"></textarea></div>
+            <button class="btn btn--primary" type="submit">Send inquiry <span class="arrow">→</span></button>
+            <p class="form-status" role="status" aria-live="polite"></p>
+            <p class="form-note">We'll never share your information. Expect a reply within a few business days.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== Footer ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html" aria-label="The Jeffersonian"><img src="assets/logo.svg" alt="The Jeffersonian" width="220" height="64" style="filter:brightness(0) invert(1)"></a>
+          <p class="footer-about" data-site="footerNote">The Jeffersonian is an adaptive-reuse restoration of the former Jefferson High School, renewed for the next century of community life.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="#about">The Building</a></li>
+            <li><a href="#living">Living Here</a></li>
+            <li><a href="apartments.html">Apartments</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#news">News</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a data-contact="email" href="mailto:203WHarrison@gmail.com">203WHarrison@gmail.com</a></li>
+            <li data-contact="address" style="white-space:pre-line">203 W Harrison Street, Jefferson, IA 50129</li>
+            <li><a data-social="facebook" href="#">Facebook</a></li>
+            <li><a data-social="instagram" href="#">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> The Jeffersonian · Jefferson, Iowa</span>
+        <span>Developed by Chris Deal · Built by Woodruff Construction</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>

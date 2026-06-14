@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Grand stairwell (placeholder)">
+  <rect width="400" height="300" fill="#f4ecd9"/>
+  <g fill="none" stroke="#8a6a2f" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.85">
+    <path d="M120 250 H160 V220 H200 V190 H240 V160 H280 V130"/><path d="M120 250 L280 130"/>
+  </g>
+  <text x="200" y="285" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="13" letter-spacing="2" fill="#8a6a2f" opacity="0.75">GRAND STAIRWELL</text>
+</svg>

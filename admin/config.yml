@@ -1,0 +1,224 @@
+# =====================================================================
+# Decap CMS configuration for The Jeffersonian
+# This file controls the visual editor at /admin/.
+#
+# HOW EDITING WORKS
+#   The site reads its text and images from the JSON files in /content
+#   and /assets/images. Decap edits those same files through friendly
+#   web forms and saves the changes straight back to GitHub — so every
+#   edit is versioned and the site stays 100% static.
+#
+# IMPORTANT — set the branch below to the branch your live site deploys
+# from (usually "main"). See README.md for one-time setup steps.
+# =====================================================================
+
+backend:
+  name: git-gateway
+  branch: main            # <-- change to your production/deploy branch if different
+
+# Lets you test the editor locally with `npx decap-server` (see README).
+local_backend: true
+
+# Where uploaded photos are stored, and the path written into the JSON.
+media_folder: "assets/images"
+public_folder: "/assets/images"
+
+site_url: https://thejeffersonian.example.com
+display_url: https://thejeffersonian.example.com
+logo_url: /assets/logo.svg
+
+# Friendly editor labels
+publish_mode: simple
+
+collections:
+  # -------------------------------------------------------------------
+  - name: "content"
+    label: "Website Content"
+    description: "Edit the text, photos, apartments and news shown on the site."
+    files:
+      # ---------------- Site & hero ----------------
+      - name: "site"
+        label: "Site Settings & Homepage Hero"
+        file: "content/site.json"
+        description: "Name, tagline, the big hero banner, headline stats and contact details."
+        fields:
+          - { label: "Site name", name: "name", widget: "string" }
+          - { label: "Short name", name: "shortName", widget: "string", required: false }
+          - { label: "Tagline", name: "tagline", widget: "text" }
+          - { label: "Search-engine description", name: "metaDescription", widget: "text", hint: "Shown in Google results and link previews (about 1–2 sentences)." }
+          - label: "Hero banner"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow (small text above headline)", name: "eyebrow", widget: "string" }
+              - { label: "Headline", name: "heading", widget: "string" }
+              - { label: "Subheading", name: "subheading", widget: "text" }
+              - label: "Primary button"
+                name: "primaryCta"
+                widget: "object"
+                fields:
+                  - { label: "Label", name: "label", widget: "string" }
+                  - { label: "Link", name: "href", widget: "string", hint: "e.g. apartments.html or #contact" }
+              - label: "Secondary button"
+                name: "secondaryCta"
+                widget: "object"
+                fields:
+                  - { label: "Label", name: "label", widget: "string" }
+                  - { label: "Link", name: "href", widget: "string" }
+          - label: "Headline stats"
+            name: "stats"
+            widget: "list"
+            summary: "{{fields.value}} — {{fields.label}}"
+            fields:
+              - { label: "Value", name: "value", widget: "string" }
+              - { label: "Label", name: "label", widget: "string" }
+          - label: "Contact details"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Email", name: "email", widget: "string" }
+              - { label: "Phone", name: "phone", widget: "string", required: false, hint: "Leave blank to hide the phone line." }
+              - { label: "Street address", name: "address", widget: "string" }
+              - { label: "City", name: "city", widget: "string" }
+              - { label: "State", name: "state", widget: "string" }
+              - { label: "ZIP", name: "zip", widget: "string" }
+              - { label: "Map search text", name: "mapQuery", widget: "string", hint: "Full address used for the embedded map." }
+          - label: "Social links"
+            name: "social"
+            widget: "object"
+            fields:
+              - { label: "Facebook URL", name: "facebook", widget: "string", required: false }
+              - { label: "Instagram URL", name: "instagram", widget: "string", required: false }
+          - { label: "Footer note", name: "footerNote", widget: "text" }
+
+      # ---------------- About / the building ----------------
+      - name: "about"
+        label: "The Building (About)"
+        file: "content/about.json"
+        fields:
+          - { label: "Section title", name: "sectionTitle", widget: "string" }
+          - { label: "Lead paragraph", name: "lead", widget: "text" }
+          - label: "Body paragraphs"
+            name: "paragraphs"
+            widget: "list"
+            field: { label: "Paragraph", name: "paragraph", widget: "text" }
+          - label: "Highlights"
+            name: "highlights"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Body", name: "body", widget: "text" }
+
+      # ---------------- Amenities ----------------
+      - name: "amenities"
+        label: "Living Here (Amenities)"
+        file: "content/amenities.json"
+        fields:
+          - { label: "Section title", name: "sectionTitle", widget: "string" }
+          - { label: "Intro", name: "intro", widget: "text" }
+          - label: "Amenities"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - label: "Icon"
+                name: "icon"
+                widget: "select"
+                options: ["elevator", "window", "wood", "locker", "loft", "parking", "leaf", "location"]
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Body", name: "body", widget: "text" }
+
+      # ---------------- Apartments ----------------
+      - name: "apartments"
+        label: "Apartments & Floor Plans"
+        file: "content/apartments.json"
+        fields:
+          - { label: "Intro", name: "intro", widget: "text" }
+          - { label: "Availability note", name: "note", widget: "text" }
+          - label: "Unit types"
+            name: "unitTypes"
+            widget: "list"
+            summary: "{{fields.name}} ({{fields.sqft}} sq ft)"
+            fields:
+              - { label: "Plan code", name: "id", widget: "string", hint: "e.g. A1, B-series" }
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Beds", name: "beds", widget: "string" }
+              - { label: "Baths", name: "baths", widget: "string" }
+              - { label: "Square feet", name: "sqft", widget: "string" }
+              - { label: "Description", name: "blurb", widget: "text" }
+              - label: "Features"
+                name: "features"
+                widget: "list"
+                field: { label: "Feature", name: "feature", widget: "string" }
+              - { label: "Availability", name: "availability", widget: "string" }
+          - label: "Floors"
+            name: "floors"
+            widget: "list"
+            summary: "{{fields.level}}"
+            fields:
+              - { label: "Level", name: "level", widget: "string" }
+              - { label: "Summary", name: "summary", widget: "string" }
+
+      # ---------------- Timeline ----------------
+      - name: "timeline"
+        label: "Restoration Timeline"
+        file: "content/timeline.json"
+        fields:
+          - { label: "Section title", name: "sectionTitle", widget: "string" }
+          - { label: "Intro", name: "intro", widget: "text" }
+          - label: "Milestones"
+            name: "milestones"
+            widget: "list"
+            summary: "{{fields.date}} — {{fields.title}}"
+            fields:
+              - { label: "Date label", name: "date", widget: "string", hint: "Free text, e.g. 1921 or Fall 2026" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Body", name: "body", widget: "text" }
+
+      # ---------------- Gallery ----------------
+      - name: "gallery"
+        label: "Photo Gallery"
+        file: "content/gallery.json"
+        fields:
+          - { label: "Section title", name: "sectionTitle", widget: "string" }
+          - { label: "Intro", name: "intro", widget: "text" }
+          - label: "Images"
+            name: "images"
+            widget: "list"
+            summary: "{{fields.caption}}"
+            fields:
+              - { label: "Image", name: "src", widget: "image", hint: "Upload or choose a photo." }
+              - { label: "Caption", name: "caption", widget: "string", required: false }
+              - { label: "Category", name: "category", widget: "string", required: false }
+
+      # ---------------- FAQ ----------------
+      - name: "faq"
+        label: "FAQ"
+        file: "content/faq.json"
+        fields:
+          - { label: "Section title", name: "sectionTitle", widget: "string" }
+          - label: "Questions"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.q}}"
+            fields:
+              - { label: "Question", name: "q", widget: "string" }
+              - { label: "Answer", name: "a", widget: "text" }
+
+      # ---------------- News / updates ----------------
+      - name: "updates"
+        label: "News & Updates"
+        file: "content/updates.json"
+        fields:
+          - { label: "Section title", name: "sectionTitle", widget: "string" }
+          - { label: "Intro", name: "intro", widget: "text" }
+          - label: "Posts"
+            name: "posts"
+            widget: "list"
+            summary: "{{fields.date}} — {{fields.title}}"
+            fields:
+              - { label: "Date", name: "date", widget: "date", format: "YYYY-MM-DD" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Summary", name: "summary", widget: "text" }
+              - { label: "Full story", name: "body", widget: "text", required: false }

@@ -1,0 +1,19 @@
+# Netlify configuration for The Jeffersonian
+# The site is plain static files, so there is no build step — Netlify just
+# publishes the repository as-is. This file also tunes a few headers.
+
+[build]
+  publish = "."
+  command = ""
+
+# Always fetch the freshest content JSON so CMS edits appear immediately.
+[[headers]]
+  for = "/content/*"
+  [headers.values]
+    Cache-Control = "no-cache"
+
+# Long-cache static assets (safe; filenames change when images are replaced).
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"

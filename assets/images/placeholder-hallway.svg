@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Hallway lockers (placeholder)">
+  <rect width="400" height="300" fill="#e7eef0"/>
+  <g fill="none" stroke="#3f5560" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.85">
+    <rect x="120" y="120" width="40" height="130"/><rect x="170" y="120" width="40" height="130"/><rect x="220" y="120" width="40" height="130"/><rect x="270" y="120" width="40" height="130"/><line x1="138" y1="150" x2="142" y2="150"/><line x1="188" y1="150" x2="192" y2="150"/><line x1="238" y1="150" x2="242" y2="150"/><line x1="288" y1="150" x2="292" y2="150"/>
+  </g>
+  <text x="200" y="285" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="13" letter-spacing="2" fill="#3f5560" opacity="0.75">HALLWAY LOCKERS</text>
+</svg>

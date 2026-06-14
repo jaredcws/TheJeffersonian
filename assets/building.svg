@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="Illustration of the historic Jeffersonian building" fill="none">
+  <defs>
+    <linearGradient id="brick" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b9543b"/>
+      <stop offset="1" stop-color="#9c3f2c"/>
+    </linearGradient>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f7efe1"/>
+      <stop offset="1" stop-color="#efe2cb"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="640" height="480" fill="url(#sky)"/>
+
+  <!-- ground -->
+  <rect y="430" width="640" height="50" fill="#e4d4b6"/>
+
+  <!-- main facade -->
+  <g>
+    <rect x="120" y="150" width="400" height="280" fill="url(#brick)"/>
+    <!-- cornice -->
+    <rect x="110" y="140" width="420" height="16" fill="#7e3122"/>
+    <!-- base -->
+    <rect x="120" y="410" width="400" height="20" fill="#7e3122"/>
+
+    <!-- central pavilion -->
+    <rect x="270" y="110" width="100" height="320" fill="#a8452f"/>
+    <rect x="262" y="100" width="116" height="14" fill="#7e3122"/>
+
+    <!-- pediment / parapet detail -->
+    <rect x="296" y="78" width="48" height="26" fill="#c9b489"/>
+    <rect x="314" y="60" width="12" height="20" fill="#7e3122"/>
+    <circle cx="320" cy="56" r="4" fill="#d9a441"/>
+
+    <!-- entrance -->
+    <rect x="300" y="350" width="40" height="80" fill="#2c1c14"/>
+    <path d="M300 350 q20 -22 40 0" fill="#2c1c14"/>
+    <rect x="294" y="346" width="52" height="8" fill="#c9b489"/>
+    <!-- steps -->
+    <rect x="288" y="430" width="64" height="6" fill="#d8c39c"/>
+    <rect x="282" y="436" width="76" height="6" fill="#cbb488"/>
+
+    <!-- window rows helper drawn below -->
+  </g>
+
+  <!-- windows: 3 floors, left wing -->
+  <g fill="#cfe0e6" stroke="#7e3122" stroke-width="3">
+    <!-- left wing windows (x positions) at three floor heights -->
+    <!-- floor 1 -->
+    <rect x="150" y="180" width="26" height="44"/><rect x="196" y="180" width="26" height="44"/><rect x="242" y="180" width="26" height="44"/>
+    <rect x="372" y="180" width="26" height="44"/><rect x="418" y="180" width="26" height="44"/><rect x="464" y="180" width="26" height="44"/>
+    <!-- floor 2 -->
+    <rect x="150" y="248" width="26" height="44"/><rect x="196" y="248" width="26" height="44"/><rect x="242" y="248" width="26" height="44"/>
+    <rect x="372" y="248" width="26" height="44"/><rect x="418" y="248" width="26" height="44"/><rect x="464" y="248" width="26" height="44"/>
+    <!-- floor 3 -->
+    <rect x="150" y="316" width="26" height="44"/><rect x="196" y="316" width="26" height="44"/><rect x="242" y="316" width="26" height="44"/>
+    <rect x="372" y="316" width="26" height="44"/><rect x="418" y="316" width="26" height="44"/><rect x="464" y="316" width="26" height="44"/>
+    <!-- central pavilion windows -->
+    <rect x="290" y="150" width="22" height="40"/><rect x="328" y="150" width="22" height="40"/>
+    <rect x="290" y="214" width="22" height="40"/><rect x="328" y="214" width="22" height="40"/>
+    <rect x="290" y="278" width="22" height="40"/><rect x="328" y="278" width="22" height="40"/>
+  </g>
+
+  <!-- window muntins -->
+  <g stroke="#7e3122" stroke-width="2" opacity="0.8">
+    <line x1="150" y1="202" x2="490" y2="202"/>
+  </g>
+</svg>
