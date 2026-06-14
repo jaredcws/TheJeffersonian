@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 64" role="img" aria-label="The Jeffersonian">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 64" role="img" aria-label="The Jeffersonian">
   <defs>
     <style>
       .mark { fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
       .word { font-family: 'Fraunces', Georgia, 'Times New Roman', serif; fill: currentColor; }
-      .wmain { font-size: 23px; font-weight: 600; letter-spacing: 0.5px; }
-      .wsub { font-family: 'Inter', system-ui, sans-serif; font-size: 8.2px; letter-spacing: 3.4px; fill: currentColor; opacity: 0.72; }
+      .wmain { font-size: 25px; font-weight: 600; letter-spacing: 0.3px; }
+      .wsub { font-family: 'Inter', system-ui, sans-serif; font-size: 8.4px; letter-spacing: 3.2px; fill: currentColor; opacity: 0.72; }
     </style>
   </defs>
   <!-- Building monogram mark -->
@@ -15,6 +15,6 @@
     <line x1="26" y1="12" x2="26" y2="6" />
     <circle cx="26" cy="4" r="1.6" fill="currentColor" stroke="none" />
   </g>
-  <text x="58" y="32" class="word wmain">The Jeffersonian</text>
-  <text x="59" y="46" class="wsub">JEFFERSON · IOWA</text>
+  <text x="58" y="33" class="word wmain">The Jeffersonian</text>
+  <text x="59" y="47" class="wsub">JEFFERSON · IOWA</text>
 </svg>
