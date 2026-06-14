@@ -20,7 +20,7 @@ backend:
 local_backend: true
 
 # Where uploaded photos are stored, and the path written into the JSON.
-media_folder: "assets/images"
+media_folder: "public/assets/images"
 public_folder: "/assets/images"
 
 site_url: https://thejeffersonian.example.com
@@ -39,7 +39,7 @@ collections:
       # ---------------- Site & hero ----------------
       - name: "site"
         label: "Site Settings & Homepage Hero"
-        file: "content/site.json"
+        file: "public/content/site.json"
         description: "Name, tagline, the big hero banner, headline stats and contact details."
         fields:
           - { label: "Site name", name: "name", widget: "string" }
@@ -94,7 +94,7 @@ collections:
       # ---------------- About / the building ----------------
       - name: "about"
         label: "The Building (About)"
-        file: "content/about.json"
+        file: "public/content/about.json"
         fields:
           - { label: "Section title", name: "sectionTitle", widget: "string" }
           - { label: "Lead paragraph", name: "lead", widget: "text" }
@@ -113,7 +113,7 @@ collections:
       # ---------------- Amenities ----------------
       - name: "amenities"
         label: "Living Here (Amenities)"
-        file: "content/amenities.json"
+        file: "public/content/amenities.json"
         fields:
           - { label: "Section title", name: "sectionTitle", widget: "string" }
           - { label: "Intro", name: "intro", widget: "text" }
@@ -132,7 +132,7 @@ collections:
       # ---------------- Apartments ----------------
       - name: "apartments"
         label: "Apartments & Floor Plans"
-        file: "content/apartments.json"
+        file: "public/content/apartments.json"
         fields:
           - { label: "Intro", name: "intro", widget: "text" }
           - { label: "Availability note", name: "note", widget: "text" }
@@ -163,7 +163,7 @@ collections:
       # ---------------- Timeline ----------------
       - name: "timeline"
         label: "Restoration Timeline"
-        file: "content/timeline.json"
+        file: "public/content/timeline.json"
         fields:
           - { label: "Section title", name: "sectionTitle", widget: "string" }
           - { label: "Intro", name: "intro", widget: "text" }
@@ -179,7 +179,7 @@ collections:
       # ---------------- Gallery ----------------
       - name: "gallery"
         label: "Photo Gallery"
-        file: "content/gallery.json"
+        file: "public/content/gallery.json"
         fields:
           - { label: "Section title", name: "sectionTitle", widget: "string" }
           - { label: "Intro", name: "intro", widget: "text" }
@@ -195,7 +195,7 @@ collections:
       # ---------------- FAQ ----------------
       - name: "faq"
         label: "FAQ"
-        file: "content/faq.json"
+        file: "public/content/faq.json"
         fields:
           - { label: "Section title", name: "sectionTitle", widget: "string" }
           - label: "Questions"
@@ -209,7 +209,7 @@ collections:
       # ---------------- News / updates ----------------
       - name: "updates"
         label: "News & Updates"
-        file: "content/updates.json"
+        file: "public/content/updates.json"
         fields:
           - { label: "Section title", name: "sectionTitle", widget: "string" }
           - { label: "Intro", name: "intro", widget: "text" }

@@ -25,28 +25,34 @@ files that the client can edit through a friendly visual editor (no code needed)
 
 ## 📁 Project structure
 
+All of the website's files live in the **`public/`** folder — that folder *is*
+the site that gets served. Everything outside it (README, host config) is just
+project tooling and is never published.
+
 ```
 .
-├── index.html            # Homepage
-├── apartments.html       # Apartments & floor plans page
-├── styles/main.css       # All styling (design tokens at the top are easy to tweak)
-├── scripts/main.js       # Loads content and powers the interactions
-├── content/              # ← All editable text lives here (JSON files)
-│   ├── site.json         #   Name, hero, stats, contact details
-│   ├── about.json        #   The building's story
-│   ├── amenities.json    #   "Living here" features
-│   ├── apartments.json   #   Floor plans & availability
-│   ├── timeline.json     #   Restoration milestones
-│   ├── gallery.json      #   Photos + captions
-│   ├── faq.json          #   Questions & answers
-│   └── updates.json      #   News posts
-├── assets/               # Logo, illustrations, favicon, and photos
-│   └── images/           #   Gallery photos (placeholders until real ones added)
-├── admin/                # The visual content editor (Decap CMS)
-│   ├── index.html
-│   └── config.yml        #   Defines the editor's forms
-├── netlify.toml          # Hosting config (optional, for Netlify)
-├── robots.txt / sitemap.xml
+├── public/                   # ← The website itself (this is what gets deployed)
+│   ├── index.html            #   Homepage
+│   ├── apartments.html       #   Apartments & floor plans page
+│   ├── styles/main.css       #   All styling (design tokens at the top are easy to tweak)
+│   ├── scripts/main.js       #   Loads content and powers the interactions
+│   ├── content/              #   ← All editable text lives here (JSON files)
+│   │   ├── site.json         #     Name, hero, stats, contact details
+│   │   ├── about.json        #     The building's story
+│   │   ├── amenities.json    #     "Living here" features
+│   │   ├── apartments.json   #     Floor plans & availability
+│   │   ├── timeline.json     #     Restoration milestones
+│   │   ├── gallery.json      #     Photos + captions
+│   │   ├── faq.json          #     Questions & answers
+│   │   └── updates.json      #     News posts
+│   ├── assets/               #   Logo, illustrations, favicon, and photos
+│   │   └── images/           #     Gallery photos (placeholders until real ones added)
+│   ├── admin/                #   The visual content editor (Decap CMS)
+│   │   ├── index.html
+│   │   └── config.yml        #     Defines the editor's forms
+│   └── robots.txt / sitemap.xml
+├── wrangler.jsonc            # Cloudflare deploy config (serves public/ as a static site)
+├── netlify.toml              # Netlify hosting config (optional)
 └── README.md
 ```
 
@@ -59,8 +65,8 @@ server (opening `index.html` directly with `file://` will not load the content).
 Any static server works — for example, with Python (already on most machines):
 
 ```bash
-# from the project folder
-python3 -m http.server 8080
+# serve the public/ folder (that's the website)
+cd public && python3 -m http.server 8080
 ```
 
 Then open **http://localhost:8080** in your browser.
@@ -90,12 +96,43 @@ and commas exactly as they are.)
 
 ## 🚀 Deploying
 
-### Recommended: Netlify (gives you the visual editor + form submissions)
+The site is just static files, so it works on any static host. Pick one.
+
+### Cloudflare (Workers) — what this repo is configured for
+
+`wrangler.jsonc` tells Cloudflare to serve the `public/` folder as a static
+site, so the **deploy command is simply `npx wrangler deploy`** with **no build
+command**. Two things must be true for the build to succeed:
+
+1. **Cloudflare must build a branch that actually exists and contains the code.**
+   In your Workers project: **Settings → Build → Branch control**, set the branch
+   to the one holding the site (e.g. `main`). A "could not fetch repository" error
+   at the *Cloning* step almost always means the configured branch doesn't exist
+   or Cloudflare lost access to the repo.
+2. **Cloudflare's GitHub app needs access to the repo.** If cloning fails, go to
+   **Settings → Build → Git repository → Manage** (or re-authorize the *Cloudflare
+   Workers & Pages* GitHub app) and grant access to `jaredcws/TheJeffersonian`.
+
+Build settings summary:
+
+| Setting | Value |
+| --- | --- |
+| Build command | *(none)* |
+| Deploy command | `npx wrangler deploy` |
+| Root directory | `/` |
+| Branch | your production branch (e.g. `main`) |
+
+> Note: the visual editor's Git Gateway login and the contact form's automatic
+> capture are Netlify features. On Cloudflare you can still edit `content/*.json`
+> directly, configure Decap's GitHub backend, or wire the form to a service like
+> Formspree. The form already falls back to opening the visitor's email app.
+
+### Alternative: Netlify (easiest path to the visual editor + form submissions)
 
 1. Push this repository to GitHub (already done if you're reading this there).
 2. In [Netlify](https://app.netlify.com), choose **Add new site → Import an
    existing project** and pick this repo. No build command is needed; the
-   publish directory is the project root (`.`). `netlify.toml` already sets this.
+   publish directory is **`public`** (`netlify.toml` already sets this).
 3. **Turn on the visual editor (one-time):**
    - In your Netlify site, go to **Integrations / Identity** and **enable
      Identity**.

@@ -3,7 +3,7 @@
 # publishes the repository as-is. This file also tunes a few headers.
 
 [build]
-  publish = "."
+  publish = "public"
   command = ""
 
 # Always fetch the freshest content JSON so CMS edits appear immediately.
